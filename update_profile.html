@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts -->
+   
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="home.html" class="logo">Kaiseki Whispers </a>
+
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="orders.html">Orders</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+
+            <div class="profile">
+                <p class="name">JingYuan</p>
+                <div class="flex">
+                    <a href="profile.html" class="btn">profile</a>
+                    <a href="#" class="delete-btn">logout</a>
+                </div>
+                <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+            </div>
+
+        </section>
+
+    </header>
+
+<!-- header section ends -->
+
+<section class="form-container">
+
+    <form action="" method="post">
+        <h3>update profile</h3>
+        <input type="text" name="name" required placeholder="enter your name" class="box" maxlength="50" value="jing yuan">
+        <input type="email" name="name" required placeholder="enter your email" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g,'')" value="jingyuan0517@gmail.com">
+        <input type="password" name="pass" placeholder="enter your old password" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g,'')" value="ABC0517">
+        <input type="password" name="cpass" placeholder="enter your new password" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g,'')" value="ABC01071218">
+        <input type="password" name="cpass" placeholder="confirm your new password" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g,'')" value="ABC01071218">
+        <input type="submit" value="update now" name="submit" class="btn">
+    </form>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts -->
+
+<footer class="footer">
+
+    <section class="grid">
+
+        <div class="box">
+             <img src="image/email.icon.png" alt="">
+             <h3>our email</h3>
+             <a href="mailto:yingxing@gmail.com">yingxing0719@gmail.com</a>
+             <a href="mailto:baiheng@gmail.com">baiheng1011@gmail.com</a>
+        </div>
+
+        <div class="box">
+             <img src="image/clock.icon.png" alt="">
+             <h3>opening hours</h3>
+             <p>00:07am to 00:10pm</p>
+       </div>
+
+       <div class="box">
+             <img src="image/map.icon.png" alt="">
+             <h3>our address</h3>
+             <a href="#">perak, malaysia - 400104</a>
+       </div> 
+
+       <div class="box">
+             <img src="image/phone.icon.png" alt="">
+             <h3>our number</h3>
+             <a href="tel:01112671543">011-12671543</a>
+             <a href="tel:01112761576">011-12761576</a>
+       </div> 
+
+    </section>
+
+    <div class="credit">created by <span>Angel</span> | all right reserved!</div>
+
+</footer>
+
+<!-- footer section ends-->
+
+<div class="loader">
+    <img src="image/loader.gif" alt="">
+</div>
+
+
+    <!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

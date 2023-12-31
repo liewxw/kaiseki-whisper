@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts -->
+   
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="home.html" class="logo">Kaiseki Whispers </a>
+
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="orders.html">Orders</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+
+            <div class="profile">
+                <p class="name">JingYuan</p>
+                <div class="flex">
+                    <a href="profile.html" class="btn">profile</a>
+                    <a href="#" class="delete-btn">logout</a>
+                </div>
+                <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+            </div>
+
+        </section>
+
+    </header>
+
+<!-- Header section ends-->
+
+<!-- hero section starts -->
+
+<section class="hero">
+
+    <div class="swiper hero-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Order Online</span>
+                    <h3>Chicken Ramen</h3>
+                    <a href="menu.html" class="btn">see menus</a>
+                </div>
+                <div class="image">
+                    <img src="image/home.img1.png" alt="">
+                </div>
+            </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Order Online</span>
+                        <h3>Green Tea</h3>
+                        <a href="menu.html" class="btn">see menus</a>
+                    </div>
+                    <div class="image">
+                        <img src="image/home.img2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Order Online</span>
+                        <h3>Matcha Swiss Roll</h3>
+                        <a href="menu.html" class="btn">see menus</a>
+                    </div>
+                    <div class="image">
+                        <img src="image/home.img3.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- hero section ends -->
+
+<!-- category section starts -->
+
+<section class="category">
+
+    <h1 class="title">food category</h1>
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="image/cat1.png" alt="">
+            <h3>Noodles</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat2.png" alt="">
+            <h3>Rice</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat3.png" alt="">
+            <h3>Drinks</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/cat4.png" alt="">
+            <h3>Dessert</h3>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- home products section starts -->
+
+
+<section class="products">
+
+    <h1 class="title">latest dishes</h1>
+
+    <div class="box-container">
+
+        <form action="" method="post" class="box">
+            <button type="submit" class="fas fa-eye" name="quick_view"></button>
+            <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+            <img src="uploaded_img/uploaded-img1.png" alt="">
+            <a href="#" class="cat">noodles</a>
+            <div class="name">tonkotsu ramen</div>
+            <div class="flex">
+               <div class="price"><span>$</span>3</div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+        </form>
+
+        <form action="" method="post" class="box">
+            <button type="submit" class="fas fa-eye" name="quick_view"></button>
+            <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+            <img src="uploaded_img/dessert5.png" alt="">
+            <a href="#" class="cat">dessert</a>
+            <div class="name">matcha tiramisu</div>
+            <div class="flex">
+               <div class="price"><span>$</span>3</div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+        </form>
+
+        <form action="" method="post" class="box">
+            <button type="submit" class="fas fa-eye" name="quick_view"></button>
+            <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+            <img src="uploaded_img/drink1.png" alt="">
+            <a href="#" class="cat">drinks</a>
+            <div class="name">green tea</div>
+            <div class="flex">
+               <div class="price"><span>$</span>3</div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+        </form>
+
+
+        <form action="" method="post" class="box">
+            <button type="submit" class="fas fa-eye" name="quick_view"></button>
+            <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+            <img src="uploaded_img/rice2.png" alt="">
+            <a href="#" class="cat">rice</a>
+            <div class="name">chazuke</div>
+            <div class="flex">
+               <div class="price"><span>$</span>3</div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+            </div>
+        </form>
+
+    </div>
+
+    <div class="more-btn">
+        <a href="menu.html" class="btn">view all</a>
+    </div>
+
+</section>
+
+<!-- home products section ends -->
+
+
+
+
+
+
+<!-- footer section starts -->
+
+<footer class="footer">
+
+    <section class="grid">
+
+        <div class="box">
+             <img src="image/email.icon.png" alt="">
+             <h3>our email</h3>
+             <a href="mailto:yingxing@gmail.com">yingxing0719@gmail.com</a>
+             <a href="mailto:baiheng@gmail.com">baiheng1011@gmail.com</a>
+        </div>
+
+        <div class="box">
+             <img src="image/clock.icon.png" alt="">
+             <h3>opening hours</h3>
+             <p>00:07am to 00:10pm</p>
+       </div>
+
+       <div class="box">
+             <img src="image/map.icon.png" alt="">
+             <h3>our address</h3>
+             <a href="#">perak, malaysia - 400104</a>
+       </div> 
+
+       <div class="box">
+             <img src="image/phone.icon.png" alt="">
+             <h3>our number</h3>
+             <a href="tel:01112671543">011-12671543</a>
+             <a href="tel:01112761576">011-12761576</a>
+       </div> 
+
+    </section>
+
+    <div class="credit">created by <span>Angel</span> | all right reserved! pork free!</div>
+
+</footer>
+
+<!-- footer section ends-->
+
+<div class="loader">
+    <img src="image/loader.gif" alt="">
+</div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link -->
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".hero-slider", {
+    loop:true,
+    grabCursor: true,
+    effect: "flip",
+    pagination: {
+        el: ".swiper-pagination",
+        clickable:true,
+   },
+}); 
+
+</script>
+
+</body>
+</html>
